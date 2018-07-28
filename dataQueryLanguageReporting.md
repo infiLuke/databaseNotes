@@ -47,3 +47,8 @@ Use Case: Sorting
 usecase: display 10 items per page; page 2:
     SELECT * FROM items LIMIT 10 OFFSET 10;
 
+
+## Subtracting Queries From Each Other
+
+### 'EXCEPT' keyword
+

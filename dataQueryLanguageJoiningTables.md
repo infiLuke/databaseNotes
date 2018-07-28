@@ -17,17 +17,3 @@ Join on foreign and primary keys to connect tables successfully.
 Includes all rows and fields even if they are empty
 
 
-## CTE - Common Table Expression
-### Using the 'WITH' keyword
-
-    WITH cteName AS (
-
-    )
-
-### Writing more than one CTE
-
-    WITH cteName AS (
-
-    ), cteName2 AS (
-
-    )

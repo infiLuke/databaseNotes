@@ -1,3 +1,4 @@
+# SQL Data Query Language Basics
 
 ### 'SELECT' &amp; 'FROM' keywords
 What is all the information we have about each book in the books table?
