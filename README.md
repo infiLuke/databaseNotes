@@ -2,7 +2,11 @@
 
 ## Index
 - Data Query Language
-- SQL Functions
+  - Basics
+  - Reporting
+  - Joining Tables
+  - Common Table Expressions
+  - SQL Functions
 
 - Data Manipulation Language
 - Data Definition Language

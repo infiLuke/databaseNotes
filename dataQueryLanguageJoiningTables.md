@@ -11,3 +11,23 @@ Join on foreign and primary keys to connect tables successfully.
     SELECT * FROM subjects
             JOIN classes ON subjects.id = classes.subject_id
             JOIN teachers ON classes.teacher_id = teachers.id;
+
+
+## 'LEFT OUTER JOIN'
+Includes all rows and fields even if they are empty
+
+
+## CTE - Common Table Expression
+### Using the 'WITH' keyword
+
+    WITH cteName AS (
+
+    )
+
+### Writing more than one CTE
+
+    WITH cteName AS (
+
+    ), cteName2 AS (
+
+    )
