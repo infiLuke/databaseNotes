@@ -1,17 +1,25 @@
 # SQL
 
 ## Index
-- Data Query Language
+
+### Data Query Language
   - Basics
   - Reporting
   - Joining Tables
   - Common Table Expressions
   - SQL Functions
 
-- Data Manipulation Language
-- Data Definition Language
+### Data Manipulation Language
+  - CRUD
 
-- Database Basics
-- Database Design
+### Data Definition Language
 
-- SQLite CLI
+### Database Basics
+
+### Database Design
+  - Normalization
+  - Sets &amp; Venn Diagrams
+  - Keys &amp; Constraints
+  - Table Relationships
+
+### SQLite CLI

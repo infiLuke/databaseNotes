@@ -13,6 +13,11 @@ count wil ignore all values that are NULL
     -- count all products in the clothing category
     SELECT COUNT(*) FROM products WHERE category = "Clothing";
 
+### Convention
+
+    By convention COUNT(1) is used to count all entries in a table.
+    The result should be identical to COUNT(*) or COUNT(primaryKeyColumn)
+
 #### DISTINCT keyword
 return only one result for each unique entry
     -- display each unique name only once
