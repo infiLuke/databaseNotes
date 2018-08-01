@@ -6,6 +6,8 @@
   - Basics
   - Reporting
   - Joining Tables
+  - Set Operations
+  - Subqueries
   - Common Table Expressions
   - SQL Functions
 
@@ -13,6 +15,8 @@
   - CRUD
 
 ### Data Definition Language
+  - managing databases
+  - managing tables
 
 ### Database Basics
 
@@ -23,3 +27,5 @@
   - Table Relationships
 
 ### SQLite CLI
+
+### MySQL
