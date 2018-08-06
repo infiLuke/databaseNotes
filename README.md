@@ -20,6 +20,7 @@
 ### Data Definition Language
 - Managing Databases
 - Managing Tables
+- Constraints
 
 ### Database Basics
 - Terminology
