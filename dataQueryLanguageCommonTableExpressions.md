@@ -9,7 +9,7 @@ Subqueries receive an identifier and can be used in multiple places throughout t
 > CTEs can also be referenced in other CTEs that are written down later
 
 ## Creating CTEs
-
+```sql
     -- create CTEs using the 'WITH' statement
     WITH cteName AS (
         -- select query goes here (no semi-colon)
@@ -17,9 +17,9 @@ Subqueries receive an identifier and can be used in multiple places throughout t
 
     -- use CTEs like a common table
     SELECT * FROM cteName;
-
+```
 ## Writing more than one CTE
-
+```sql
     WITH cteName AS (
 
     ), cteName2 AS (
@@ -27,9 +27,10 @@ Subqueries receive an identifier and can be used in multiple places throughout t
     )
     -- don't forget the comma
     -- don't use the 'WITH' keyword a second time
-
+```
 
 ## Example: Reusable Module
+```sql
     WITH currentProducts AS (
       SELECT ProductName, CategoryName, UnitPrice, UnitsInStock FROM Products
         JOIN Categories ON Products.CategoryID = Categories.ID
@@ -40,9 +41,10 @@ Subqueries receive an identifier and can be used in multiple places throughout t
       FROM currentProducts
       GROUP BY CategoryName
       ORDER BY productCount;
-
+```
 
 ## Example: Refactored Subqueries
+```sql
     WITH all_orders AS (
         SELECT EmployeeID, COUNT(*) AS order_count
         FROM Orders
@@ -60,9 +62,10 @@ Subqueries receive an identifier and can be used in multiple places throughout t
       FROM Employees
       JOIN all_orders ON Employees.ID = all_orders.EmployeeID
       JOIN late_orders ON Employees.ID = late_orders.EmployeeID;
-
+```
 
 ## Example: Using CTEs inside of CTEs
+```sql
     WITH all_sales AS (
       SELECT
           Orders.ID AS OrderID,
@@ -88,3 +91,4 @@ Subqueries receive an identifier and can be used in multiple places throughout t
       JOIN revenue_by_employee AS r ON r.EmployeeID = s.EmployeeID
       JOIN Employees ON r.EmployeeID = Employees.Id
       ORDER BY r.total_revenue DESC;
+```

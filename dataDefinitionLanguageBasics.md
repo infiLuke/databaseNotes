@@ -3,10 +3,13 @@
 ## Creating Tables
 
 ### without data types
+```sql
     CREATE TABLE tableName (column1, column2, column3 ...);
     -- SQLite does not use dataTypes except for 'INTEGER'
+```
 
 ### with data types
+```sql
     -- create a table with data types
     CREATE TABLE tableName (
       ID SMALLINT,
@@ -15,6 +18,7 @@
       state VARCHAR(255),
       venue VARCHAR(255)
     );
+```
 
 
 ## Modify Tables 'ALTER TABLE'

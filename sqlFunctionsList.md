@@ -1,7 +1,7 @@
 # List of SQLite Functions
 
 ## String Functions
-
+```sql
     ||
     concat(a, b, ...)
     printf(...)
@@ -15,9 +15,9 @@
     replace(a, b, [c])
 
     instr(a, b)
-
+```
 ## Numeric &amp; Aggregate Functions
-
+```sql
     avg(a)
     count(a)
     max(a, [b])
@@ -28,12 +28,12 @@
     round(a, [b])
     abs(a)
     random()
-
+```
 ## DateTime Functions
-
+```sql
     date()
     time()
     datetime()
     strftime()
     julianday()
-
+```

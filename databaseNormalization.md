@@ -6,7 +6,7 @@ These links are the relationships between tables.
 - Eliminating redundent data to reduce storage requirements.
 - Data Integrity
   - Eliminite update anomalies (data can be updated in one single place and is referenced elsewhere by ID)
-  - Eliminate Inconsistencies (when the same datais stored in multiple places)
+  - Eliminate Inconsistencies (when the same data is stored in multiple places)
 Faster indexing and sorting
 Faster querying (query optimization in the database engine)
 

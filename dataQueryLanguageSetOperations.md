@@ -15,11 +15,13 @@ No duplicate rows will be returned.
 ## UNION ALL
 Same as 'UNION' but return all rows, even if there are duplicates.
 
+```sql
     SELECT MakeName FROM Make
         UNION ALL
     SELECT MakeName FROM ForeignMake
         ORDER BY MakeName;
     -- some makes could be duplicated in the result-set
+```
 
 ## INTERSECT
 Only returns the rows that exist in both result-sets from the SELECT statements
@@ -41,7 +43,9 @@ perfect match with the second SELECT statement.
 
 
 ## Multiple Set Operators
+The Set Operations get evaluated line by line.
 
+```sql
     -- Create a list of unique books.
     -- Books that are in the north or south location, but not in both locations.
     -- both queries produce the same result
@@ -64,3 +68,4 @@ perfect match with the second SELECT statement.
       SELECT title FROM books_north
         INTERSECT
       SELECT title FROM books_south);
+```

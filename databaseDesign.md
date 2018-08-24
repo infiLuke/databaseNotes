@@ -1,5 +1,10 @@
 # Database Design
 
+1. Planning
+2. Normalization
+3. Relationships
+4. Implementation
+
 ## Database Planning
      - TicketsTable
       * ID
@@ -23,7 +28,3 @@
 > removing repeated data; moving data to different tables and replacing the data in the original table  with an ID, is called **Normalization**
 
 
-1. Planning
-2. Normalization
-3. Relationships
-4. Implementation

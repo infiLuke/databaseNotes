@@ -18,22 +18,25 @@ The way the query instructs the database to combine the two tables.
 Keywords `JOIN` and `INNER JOIN` are equivalent by default.
 Join on foreign and primary keys to connect tables successfully.
 
+```sql
     SELECT * FROM tableOne
         INNER JOIN tableTwo ON tableOne.PrimaryID = tableTwo.ForeignID;
-
+```
 ### Aliasing Tables
+```sql
     SELECT * FROM tableOne AS t1
         INNER JOIN tableTwo AS t2 ON t1.PrimaryID = t2.ForeignID;
 
     SELECT mk.MakeName, md.ModelName FROM make AS mk
         JOIN model AS md ON mk.MakeID = md.MakeID
         WHERE mk.MakeName = 'Chevy';
-
+```
 ### Multiple Tables
+```sql
     SELECT <columns> FROM <table 1>
         INNER JOIN <table 2> ON <table 1>.<column> = <table 2>.<column>
         INNER JOIN <table 3> ON <table 1>.<column> = <table 3>.<column>
-
+```
 
 ## Outer Joins
 > Outer Joins enable including records that don't have related records in other tables.

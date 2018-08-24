@@ -10,6 +10,7 @@ Subqueries are always written in parenthesis
 Using a subquery to filter an outer query.
 You can only select **one column** in the subquery.
 
+```sql
     SELECT * FROM sales WHERE CarID IN (
         SELECT CarID FROM Car WHERE ModelYear = 2015
         );
@@ -17,15 +18,14 @@ You can only select **one column** in the subquery.
     SELECT ModelName FROM Model WHERE ModelID IN (
         SELECT ModelID FROM Car WHERE StickerPrice > 30000
         );
-
+```
 ## Using A Subquery To Create A Temporary Table
 Instead of joining to another table join to a subquery
 Derived or temporary tables have to be aliased with `AS` to be referenceable
-
+```sql
     SELECT * FROM table
     JOIN (SELECT column1, column2 FROM table2) AS t
         ON table.ID = t.ID;
-
 
 
     -- Generate a report that lists the book titles from both library locations and
@@ -38,7 +38,6 @@ Derived or temporary tables have to be aliased with `AS` to be referenceable
       )
       GROUP BY title
       ORDER BY title ASC;
-
 
 
     -- Generate a report that lists a patron's first name, email and loan count for
@@ -57,3 +56,4 @@ Derived or temporary tables have to be aliased with `AS` to be referenceable
     SELECT * FROM Sale
         INNER JOIN (SELECT CustomerID FROM Customer WHERE Gender = 'F') AS femaleCustomers
         ON Sale.CustomerID = femaleCustomers.CustomerID;
+```
